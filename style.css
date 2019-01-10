@@ -1,0 +1,47 @@
+body {
+    background:yellowgreen;
+    margin: 0 auto;
+    max-width: 56em;
+    padding: 1em 0;
+  }
+  
+#harryPotter{
+      
+    /* Grid Fallback */
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* Supports Grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(283px, 1fr));
+    grid-auto-rows: minmax(120px, auto);
+    grid-gap: 1em;
+  }
+
+  
+  
+h2 {
+    text-align: center;
+}
+
+ img{
+    
+    /* Demo-Specific Styles */
+    background:#eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    
+    /* Flex Fallback */
+    margin-left: 10px;
+    margin-right:10px;
+    flex: 1 1 200px;
+  }
+  @supports (display: grid) {
+    .module {
+      margin: 0;
+    }
+  }
+  
+  
